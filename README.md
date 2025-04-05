@@ -6,23 +6,48 @@
 
 ## Описание версий
 Версии основываются на двух образах: Ubuntu 24.04 и Python-slim 3.12. 
-Если в названии указана приписка *slim*, то образ основан на python-slim. В *другом случае* он основан на ubuntu.
-*Development* версия - самая последняя версия, может быть не стабильной.
-*Latest* версия - последняя стабильная версия.
+Если в названии указана приписка **slim**, то образ основан на python-slim. В **другом случае** он основан на ubuntu.
+
+- **Development** - самая последняя версия, может быть не стабильной.
+- **Latest** - последняя стабильная версия.
 
 ## Установка
 Файлы требуют установленный [Docker](https://www.docker.com/).
 Введите нужную команду в директории скачанного репозитория
-- *develop* `docker build -f develop.Dockerfile -t static-jinja-plus:develop .`
-- *develop-slim* `docker build -f develop-slim.Dockerfile -t static-jinja-plus:develop-slim .`
-- *latest* `docker build -f latest.Dockerfile -t static-jinja-plus:latest .`
-- *latest-slim* `docker build -f latest-slim.Dockerfile -t static-jinja-plus:latest-slim .`
-- *0.1.0* `docker build -f 0.1.0.Dockerfile -t static-jinja-plus:0.1.0 .`
-- *0.1.0-slim* `docker build -f 0.1.0-slim.Dockerfile -t static-jinja-plus:0.1.0-slim .`
-- *0.1.1* `docker build -f 0.1.1.Dockerfile -t static-jinja-plus:0.1.1 .`
-- *0.1.1-slim* `docker build -f 0.1.1-slim.Dockerfile -t static-jinja-plus:0.1.1-slim .`
+- **develop**
+  ```bash
+  docker build -f develop.Dockerfile -t static-jinja-plus:develop .
+  ```
+- **develop-slim**
+  ```bash
+  docker build -f develop-slim.Dockerfile -t static-jinja-plus:develop-slim .
+  ```
+- **latest**
+  ```bash
+  docker build -f latest.Dockerfile -t static-jinja-plus:latest .
+  ```
+- **latest-slim**
+  ```bash
+  docker build -f latest-slim.Dockerfile -t static-jinja-plus:latest-slim .
+  ```
+- **0.1.0**
+  ```bash
+  docker build -f 0.1.0.Dockerfile -t static-jinja-plus:0.1.0 .
+  ```
+- **0.1.0-slim**
+  ```bash
+  docker build -f 0.1.0-slim.Dockerfile -t static-jinja-plus:0.1.0-slim .
+  ```
+- **0.1.1**
+  ```bash
+  docker build -f 0.1.1.Dockerfile -t static-jinja-plus:0.1.1 .
+  ```
+- **0.1.1-slim**
+  ```bash
+  docker build -f 0.1.1-slim.Dockerfile -t static-jinja-plus:0.1.1-slim .
+  ```
 
-** Пример использования
+## Пример использования
 Зайдите в папку где есть папка templates с подготовленными для обработки файлами.
 Запустите команду типа
 
